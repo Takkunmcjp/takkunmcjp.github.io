@@ -1,12 +1,12 @@
 const words = [
-  "apple", "banana", "computer", "keyboard", "javascript",
-  "github", "school", "teacher", "window", "language",
-  "program", "function", "variable", "internet", "browser"
+  "Army", "Apple", "Banana", "Computer", "Keyboard", "Language",
+  "School", "Teacher", "Window", "Browser", "Program", "Function",
+  "Variable", "Internet", "Github", "Typing", "Practice", "Speed"
 ];
 
 let currentWord = "";
 let score = 0;
-let time = 30;
+let time = 60;
 let timer;
 
 const wordEl = document.getElementById("word");
@@ -18,7 +18,7 @@ const startBtn = document.getElementById("startBtn");
 
 function startGame() {
   score = 0;
-  time = 30;
+  time = 60;
   scoreEl.textContent = score;
   timeEl.textContent = time;
   inputEl.disabled = false;
