@@ -1,7 +1,10 @@
 const words = [
-  "Army", "Apple", "Banana", "Computer", "Keyboard", "Language",
-  "School", "Teacher", "Window", "Browser", "Program", "Function",
-  "Variable", "Internet", "Github", "Typing", "Practice", "Speed"
+  "army","apple","banana","computer","keyboard","language","school","teacher","window","browser",
+  "program","function","variable","internet","github","typing","practice","speed","music","river",
+  "mountain","forest","desert","ocean","planet","galaxy","universe","energy","future","history",
+  "science","engineer","doctor","nurse","student","library","book","pencil","paper","station",
+  "train","airplane","airport","garden","flower","animal","tiger","lion","elephant","giraffe",
+  "monkey","zebra","horse","dog","cat","bird","fish","shark","whale","dolphin","sun","moon","star"
 ];
 
 let currentWord = "";
@@ -51,11 +54,16 @@ function endGame() {
 }
 
 inputEl.addEventListener("input", () => {
-  if (inputEl.value === currentWord) {
+  const typed = inputEl.value.toLowerCase();
+  if (typed === currentWord.toLowerCase()) {
     score++;
     scoreEl.textContent = score;
     inputEl.value = "";
     nextWord();
+  } else {
+    // ミス演出: 入力が違う時に赤く点滅
+    inputEl.classList.add("error");
+    setTimeout(() => inputEl.classList.remove("error"), 300);
   }
 });
 
