@@ -67,3 +67,20 @@ inputEl.addEventListener("input", () => {
 });
 
 startBtn.addEventListener("click", startGame);
+
+function endGame() {
+  inputEl.disabled = true;
+  startBtn.disabled = false;
+  const finalWPM = wpmEl ? wpmEl.textContent : 0;
+  messageEl.textContent = `ゲーム終了！スコア: ${score}, WPM: ${finalWPM}`;
+
+  // 履歴保存
+  const history = JSON.parse(localStorage.getItem("typingHistory")) || [];
+  history.push({
+    game: "日本語単語タイピング", // 各ゲームごとに名前を変える
+    score: score,
+    wpm: finalWPM,
+    date: new Date().toLocaleString()
+  });
+  localStorage.setItem("typingHistory", JSON.stringify(history));
+}
