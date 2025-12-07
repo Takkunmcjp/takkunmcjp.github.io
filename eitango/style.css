@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#word {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+#input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
