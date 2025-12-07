@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>タイピングゲーム (WPM付き)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>タイピングゲーム (WPM計測)</h1>
+    <div id="word-box">
+      <p id="word">スタートを押してください！</p>
+    </div>
+    <input type="text" id="input" placeholder="ここに入力..." disabled>
+    <p id="message"></p>
+    <div class="status">
+      <p>スコア: <span id="score">0</span></p>
+      <p>時間: <span id="time">60</span>秒</p>
+      <p>WPM: <span id="wpm">0</span></p>
+    </div>
+    <button id="startBtn">スタート</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
