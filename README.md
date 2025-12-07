@@ -24,17 +24,29 @@
 
 ランダムな単語が表示され、正しくタイプすると次へ進むモード
 
+Use:
+
+英語: https://typing.takkunlego0916.f5.si/eitango/
+
+日本語: https://typing.takkunlego0916.f5.si/jptango/
+
 **2️⃣ 短文タイピング**
 
 短い文章を素早く入力する練習
+
+Use: https://typing.takkunlego0916.f5.si/jpbunsho/
 
 3️⃣ 長文チャレンジ
 
 実践向けの長文を一定時間内にどれだけ正確に打てるかを測定
 
+Use: https://typing.takkunlego0916.f5.si/jplong/
+
 4️⃣ スピードテスト（WPM計測）
 
 30秒 or 60秒の制限時間で入力速度を計測。
+
+Use: https://typing.takkunlego0916.f5.si/wpmkeisoku
 
 # ライセンス
 
