@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>日本語文章タイピングゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>日本語文章タイピングゲーム</h1>
+    <div id="sentence-box">
+      <p id="sentence">スタートを押してください！</p>
+    </div>
+    <input type="text" id="input" placeholder="ここに入力..." disabled>
+    <p id="message"></p>
+    <div class="status">
+      <p>スコア: <span id="score">0</span></p>
+      <p>時間: <span id="time">60</span>秒</p>
+    </div>
+    <button id="startBtn">スタート</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
